@@ -30,6 +30,7 @@ const generateFingerprintObject = async () => {
 
     const hashValues = {
         fonts: hashString(JSON.stringify(result.fonts.value)),
+        version: "test",
         deviceMemory: hashString(JSON.stringify(result.deviceMemory.value)),
         hardwareConcurrency: hashString(JSON.stringify(result.hardwareConcurrency.value)),
         timezone: hashString(JSON.stringify(result.timezone.value)),
